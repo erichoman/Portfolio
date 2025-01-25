@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sunset">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/output-style.css')}}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Eric Homan - Data Scientist & Astrophysicist</title>
+    <style>
+        /* Prevent horizontal scroll */
+        body {
+            overflow-x: hidden;
+        }
+        
+        /* Animated gradient background */
+        .gradient-bg {
+            background: linear-gradient(
+                -45deg,
+                #FF6B6B 0%,  /* Bright coral */
+                #4A90E2 50%, /* Bright blue */
+                #FF8E53 100% /* Orange */
+            );
+            background-size: 300% 300%;
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 50% 100%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            75% {
+                background-position: 50% 0%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-2 md:p-8 lg:p-12 gradient-bg">
+    <!-- Main Container -->
+    <div class="mx-2 md:mx-4 bg-base-200/70 backdrop-blur-lg rounded-3xl shadow-2xl p-4 md:p-8 lg:p-12 overflow-hidden">
+        <!-- Profile Section -->
+        <div class="flex flex-col lg:flex-row items-stretch gap-12 py-16" data-aos="fade-up">
+            <!-- Left Column: Profile Info -->
+            <div class="flex flex-col md:flex-row lg:flex-col items-center gap-12 lg:w-3/5">
+                <!-- Avatar -->
+                <div class="avatar" data-aos="fade-right" data-aos-delay="200">
+                    <div class="w-64 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <img src="{{url_for('static', filename='images/me.jpg')}}" alt="Profile Picture" />
+                    </div>
+                </div>
+                
+                <!-- Info -->
+                <div class="text-center md:text-left flex-1" data-aos="fade-left" data-aos-delay="400">
+                    <h1 class="text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent select-none">Eric Homan</h1>
+                    <div class="text-2xl mb-6 opacity-80 select-none">Data Scientist | Astrophysicist | AI/ML Researcher</div>
+                    <div class="mb-6 hover:translate-x-2 transition-transform duration-300 max-w-2xl p-4 rounded-lg bg-base-200/50 select-none">
+                        <h2 class="text-2xl font-semibold mb-3">Education</h2>
+                        <div class="space-y-2">
+                            <p class="text-xl"><span class="font-semibold">MSc Data Analytics</span> - Dublin City University (2025)</p>
+                            <p class="text-xl"><span class="font-semibold">BSc Physics with Astronomy</span> - Dublin City University (2024)</p>
+                        </div>
+                    </div>
+                    <div class="hover:translate-x-2 transition-transform duration-300 max-w-2xl p-4 rounded-lg bg-base-200/50 select-none">
+                        <h2 class="text-2xl font-semibold mb-3">Who am I?</h2>
+                        <p class="text-xl opacity-80">I began as an astrophysicist, but quickly found my passion for data science and machine learning.
+                            I now use my advanced background in mathematics to have an innovative approach to machine learning and data science.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Skills -->
+            <div class="lg:w-2/5 lg:border-l lg:pl-12 lg:pt-8 flex flex-col justify-between" data-aos="fade-left">
+                <!-- Top Section with Skills -->
+                <div class="space-y-8">
+                    <!-- Languages Section -->
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4 text-center lg:text-left bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent select-none">Languages</h2>
+                        <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Python</div>
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">SQL</div>
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">C#</div>
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">LUA</div>
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">R</div>
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Javascript</div>
+                            <div class="badge badge-lg badge-primary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">HTML</div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4 text-center lg:text-left bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent select-none">Skills</h2>
+                        <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                            <div class="badge badge-lg badge-secondary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">AWS/AZURE</div>
+                            <div class="badge badge-lg badge-secondary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Scientific Computing</div>
+                            <div class="badge badge-lg badge-secondary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Linear Algebra</div>
+                            <div class="badge badge-lg badge-secondary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">High Performance Computing</div>
+                            <div class="badge badge-lg badge-secondary text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Machine Learning</div>
+                        </div>
+                    </div>
+
+                    <!-- Hobbies Section -->
+                    <div class="pb-32 border-b-2 border-primary/50">
+                        <h2 class="text-3xl font-bold mb-4 text-center lg:text-left bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent select-none">Hobbies</h2>
+                        <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                            <div class="badge badge-lg badge-accent text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Everything to do with Space</div>
+                            <div class="badge badge-lg badge-accent text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Musician</div>
+                            <div class="badge badge-lg badge-accent text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Open Source</div>
+                            <div class="badge badge-lg badge-accent text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Competitive Esports</div>
+                            <div class="badge badge-lg badge-accent text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Philosophy</div>
+                            <div class="badge badge-lg badge-accent text-xs md:text-lg py-3 md:py-4 px-3 md:px-6 hover:translate-x-2 transition-transform duration-300 cursor-default whitespace-normal text-center min-h-[2.5rem] md:min-h-0 select-none">Video Game Development</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links - Hidden on smaller screens or when zoomed in -->
+                <div class="hidden lg:flex flex-col mt-16">
+                    <div class="grid grid-cols-3 gap-8">
+                        <a href="mailto:eric.homan@dcu.ie" class="btn btn-primary h-24 text-xl hover:translate-x-2 transition-transform duration-300 select-none" data-aos="zoom-in" data-aos-delay="200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Email
+                        </a>
+                        <a href="https://twitter.com/EricLEdwards11" class="btn btn-primary h-24 text-xl hover:translate-x-2 transition-transform duration-300 select-none" data-aos="zoom-in" data-aos-delay="400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://github.com/EricLEdwards" class="btn btn-primary h-24 text-xl hover:translate-x-2 transition-transform duration-300 select-none" data-aos="zoom-in" data-aos-delay="600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="py-8 md:py-16">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" data-aos="fade-up">Experience</h2>
+            
+            <!-- Timeline Card Container -->
+            <div class="bg-base-100/80 backdrop-blur-lg rounded-3xl p-3 md:p-12 shadow-xl">
+                <div class="relative container mx-auto px-2 md:px-6">
+                    <!-- Timeline Center Line - Hidden on mobile -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary hidden md:block"></div>
+
+                    <!-- Mobile Timeline Line -->
+                    <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary md:hidden"></div>
+
+                    <!-- Timeline Items -->
+                    <!-- Item 1 -->
+                    <div class="relative mb-12 md:mb-24" data-aos="fade-right">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <!-- Left Content -->
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
+                                <div class="bg-base-200/90 p-4 md:p-6 rounded-lg shadow-xl hover:translate-x-2 transition-transform duration-300 select-none">
+                                    <h3 class="text-lg md:text-xl font-bold mb-2">Computational Astrophysics Research Intern</h3>
+                                    <p class="text-base md:text-lg mb-2">Dublin Institute for Advanced Studies</p>
+                                    <p class="opacity-80 text-sm md:text-base">01/2023-04/2023</p>
+                                    <p class="mt-2 text-sm md:text-base">I was lucky enough to be accepted into the Dublin Institute for Advanced Studies for a 4 month internship. I investigated cosmic ray propagation and developed in-house python tools for analyzing results of simulations. I worked in a fast paced team environment the work I did is still being used today.</p>
+                                </div>
+                            </div>
+                            <!-- Timeline Point -->
+                            <div class="absolute left-8 md:left-1/2 top-8 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-3 h-3 md:w-4 md:h-4 bg-primary rounded-full"></div>
+                            <!-- Right Content (Empty on desktop) -->
+                            <div class="hidden md:block md:w-1/2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative mb-12 md:mb-24" data-aos="fade-left">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <!-- Left Content (Empty on desktop) -->
+                            <div class="hidden md:block md:w-1/2"></div>
+                            <!-- Timeline Point -->
+                            <div class="absolute left-8 md:left-1/2 top-8 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-3 h-3 md:w-4 md:h-4 bg-secondary rounded-full"></div>
+                            <!-- Right Content -->
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8">
+                                <div class="bg-base-200/90 p-4 md:p-6 rounded-lg shadow-xl hover:translate-x-2 transition-transform duration-300 select-none">
+                                    <h3 class="text-lg md:text-xl font-bold mb-2">Computational Physics Research Intern</h3>
+                                    <p class="text-base md:text-lg mb-2">Dublin City University</p>
+                                    <p class="opacity-80 text-sm md:text-base">05/2023-08/2023</p>
+                                    <p class="mt-2 text-sm md:text-base">My academic record opened up the opportunity to work over the summer in the Physics Department at DCU.
+                                        I researched the most effective ways to represent 2D representations of Graphene lattices, for being fed to a CNN. This work was completed in a solo environment and it was what sparked my interest in machine learning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative mb-12 md:mb-24" data-aos="fade-right">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <!-- Left Content -->
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
+                                <div class="bg-base-200/90 p-4 md:p-6 rounded-lg shadow-xl hover:translate-x-2 transition-transform duration-300 select-none">
+                                    <h3 class="text-lg md:text-xl font-bold mb-2">Technical Customer Service Agent</h3>
+                                    <p class="text-base md:text-lg mb-2">The Irish Times</p>
+                                    <p class="opacity-80 text-sm md:text-base">10/2024-Present </p>
+                                    <p class="mt-2 text-sm md:text-base">Whilst I study my masters degree, I am lucky enough to be able to fund it with my work as a Technical Customer Service Agent for the prestigeous Irish Times newspaper. 
+                                        This work is done in a team environment and I have learned a lot about working in a team and how to communicate effectively.
+                                         </p>
+                                </div>
+                            </div>
+                            <!-- Timeline Point -->
+                            <div class="absolute left-8 md:left-1/2 top-8 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-3 h-3 md:w-4 md:h-4 bg-accent rounded-full"></div>
+                            <!-- Right Content (Empty on desktop) -->
+                            <div class="hidden md:block md:w-1/2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="relative mb-12 md:mb-24" data-aos="fade-left">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <!-- Left Content (Empty on desktop) -->
+                            <div class="hidden md:block md:w-1/2"></div>
+                            <!-- Timeline Point -->
+                            <div class="absolute left-8 md:left-1/2 top-8 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-3 h-3 md:w-4 md:h-4 bg-primary rounded-full"></div>
+                            <!-- Right Content -->
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8">
+                                <div class="bg-base-200/90 p-4 md:p-6 rounded-lg shadow-xl hover:translate-x-2 transition-transform duration-300 select-none">
+                                    <h3 class="text-lg md:text-xl font-bold mb-2">Reliable, Competent Employee</h3>
+                                    <p class="text-base md:text-lg mb-2">Your Company</p>
+                                    <p class="opacity-80 text-sm md:text-base">Today!</p>
+                                    <p class="mt-2 text-sm md:text-base">I am excited for my future in the tech industry, offering my skills in a team or solo environment, to help your company grow. Offering my services as a Data Scientist, Machine Learning Engineer,
+                                         and general problem solver.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="py-8 md:py-16 space-y-8 md:space-y-12">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" data-aos="fade-up">Projects</h2>
+            
+            {% from "components/project_card.html" import project_card %}
+            {% for project in projects %}
+                {{ project_card(project) }}
+            {% endfor %}
+        </div>
+
+        <!-- Contact Section - Visible only on smaller screens or when zoomed in -->
+        <div class="lg:hidden py-8 md:py-12 text-center" data-aos="fade-up">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:eric.homan@dcu.ie" class="btn btn-primary hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Email
+                </a>
+                <a href="https://twitter.com/EricLEdwards11" class="btn btn-primary hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    Twitter
+                </a>
+                <a href="https://github.com/EricLEdwards" class="btn btn-primary hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            offset: 100,
+            mirror: true
+        });
+
+        function toggleProject(projectId) {
+            const content = document.getElementById(projectId);
+            
+            if (content.classList.contains('h-0')) {
+                // Expand
+                content.classList.remove('h-0', 'opacity-0');
+                content.classList.add('h-auto', 'opacity-100');
+            } else {
+                // Collapse
+                content.classList.remove('h-auto', 'opacity-100');
+                content.classList.add('h-0', 'opacity-0');
+            }
+        }
+    </script>
+</body>
+</html>

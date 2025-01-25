@@ -1,0 +1,22 @@
+{
+    "title": "Generalized Maximum Entropy Noise Reduction in Python",
+    "short_description": "Undergraduate Thesis research project at Dublin City University",
+    "long_description": "Investigated a novel method of noise reduction in signal processing using a Maximum Entropy approach. This method is a generalization of the Gibbs Annihilation method, and is more effective at removing noise from signals with high frequency components.",
+    "github_url": "https://github.com/erichoman/GMENoiseReduce",
+    "technologies": ["Python", "Machine Learning", "Signal Processing"],
+    "key_features": [
+        "Auto-Encoder Architecture",
+        "Fourier Transform Analysis",
+        "MRI Signal Processing"
+    ],
+    "images": [
+        {
+            "path": "image.png",
+            "caption": "Comapring to Fourier Transform"
+        },
+        {
+            "path": "image2.png",
+            "caption": "Results Comparison"
+        }
+    ]
+} 
